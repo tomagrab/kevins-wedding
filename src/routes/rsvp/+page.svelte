@@ -31,6 +31,18 @@
       </div>
 
       <div class="form-control flex flex-col items-center">
+        <label for="guests">Attending</label>
+        <select
+          class="input input-primary input-bordered"
+          id="attending"
+          name="attending"
+        >
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+
+      <div class="form-control flex flex-col items-center">
         <label for="guests">Guests</label>
         <input
           class="input input-primary input-bordered"

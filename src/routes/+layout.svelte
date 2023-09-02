@@ -1,4 +1,5 @@
 <script lang="ts">
+  import AnimatedRoute from "$lib/Components/AnimatedRoute/AnimatedRoute.svelte";
   import Footer from "$lib/Components/Footer/Footer.svelte";
   import Navbar from "$lib/Components/Navbar/Navbar.svelte";
   import "../app.scss";
@@ -14,7 +15,9 @@
     <!-- Page content here -->
     <Navbar />
     <div class="flex-grow py-4">
-      <slot />
+      <AnimatedRoute>
+        <slot />
+      </AnimatedRoute>
     </div>
     <Footer />
   </div>
@@ -23,8 +26,9 @@
     <ul class="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
       <!-- Sidebar content here -->
       <li><a href="/">Home</a></li>
-      <li><a href="/rsvp">RSVP</a></li>
       <li><a href="/about">About</a></li>
+      <li><a href="/rsvp">RSVP</a></li>
+      <li><a href="/attending">Attending</a></li>
     </ul>
   </div>
 </div>
